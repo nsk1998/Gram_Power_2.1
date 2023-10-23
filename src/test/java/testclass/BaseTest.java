@@ -34,6 +34,8 @@ public class BaseTest {
 	@BeforeSuite
 	public void initBrowser() throws IOException
 	{
+		
+		
 		ConfigReader confiqreader = new ConfigReader();
 		
 		String browsername = confiqreader.readConfig("browser");
@@ -62,16 +64,18 @@ public class BaseTest {
 	public void createObject()
 	{
 		 loginpage = new LoginPage(driver);
-		// dashboardpage = new DashboardPage(driver);
+		 dashboardpage = new DashboardPage(driver);
 	}
 	
 
 	
-//	@AfterSuite
-//	public void tearDown()
-//	{
-//		driver.quit();
-//	}
+	@AfterSuite
+	public void tearDown()
+	{
+		 extent.flush();
+		
+		//driver.quit();
+	}
 
 }
 

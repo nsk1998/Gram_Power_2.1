@@ -5,6 +5,7 @@
     <classes>
       <class name="testclass.DashboardTest">
         <methods>
+          <include name="tearDown"/>
           <include name="deshboardPoopup"/>
           <include name="createObject"/>
           <include name="dashBoardGetTitle"/>
@@ -14,6 +15,7 @@
       </class> <!-- testclass.DashboardTest -->
       <class name="testclass.LoginTest">
         <methods>
+          <include name="tearDown"/>
           <include name="LoginToGrampower"/>
           <include name="createObject"/>
           <include name="initBrowser"/>

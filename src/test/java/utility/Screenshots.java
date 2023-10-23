@@ -17,10 +17,7 @@
 			
 			File screenshot = ts.getScreenshotAs(OutputType.FILE);
 			
-			//String path = "C:\Users\Lenovo\Desktop\Gram_Power_2.O\Gram_Power_2.O\screenshots";
-			
-			
-			String path = System.getProperty("user.dir")+"\\Screenshots\\"+filename+".png";
+			String path = System.getProperty("user.dir")+"/src/test/java/utility/Screenshots"+filename+".png";
 			
 			File destinationpath = new File(path);
 			
@@ -36,13 +33,13 @@
 			
 			driver.manage().window().maximize();
 			
-			driver.get("https://www.amazon.in/");
+			driver.get("https://data.grampower.com/hes/");
 			
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			
 			File screenshot = ts.getScreenshotAs(OutputType.FILE);
 			
-			String path = "C:\\Users\\Lenovo\\Desktop\\Gram_Power_2.O\\Gram_Power_2.O\\screenshotsC:\\Users\\Lenovo\\Desktop\\Gram_Power_2.O\\Gram_Power_2.O\\screenshots";
+			String path = "C:\\Users\\Lenovo\\Desktop\\Gram_Power_2.O\\Gram_Power_2.O\\src\\test\\java\\utility\\Screenshots.java";
 			
 			//String path = System.getProperty("user.dir")+"\\screenshots\\"+filename+".png";
 			
