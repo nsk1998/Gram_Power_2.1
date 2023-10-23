@@ -12,7 +12,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.aventstack.extentreports.ExtentReports;
+
 import Pages.LoginPage;
+import extentlisteners.TestNGListeners;
 import extentlisteners.extentReportGen;
 import utility.ConfigReader;
 import Pages.DashboardPage;
@@ -22,6 +25,9 @@ public class BaseTest {
 	public static WebDriver driver;
 	public LoginPage loginpage;
 	public static ConfigReader confiqreader;
+	static ExtentReports extent;
+	
+	static ExtentReports extentReportGenerator;
 	
 	public DashboardPage dashboardpage;
 	

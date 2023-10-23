@@ -13,7 +13,7 @@ public class extentReportGen {
 	public static ExtentReports extentReportGenerator() {
 		
 		String userDir = System.getProperty("user.dir");
-		String file = userDir + "reports/Grampower.html";	
+		String file = userDir + "reports/Grampowerreports.html";	
 	
 	//String file = System.getProperty("user.dir")+"//reports//LivingsLiquidReport.html";
 	
@@ -29,7 +29,7 @@ public class extentReportGen {
 	
 	extent.attachReporter(reporter);
 	
-	extent.setSystemInfo("Browser Used", "Chrome");
+	extent.setSystemInfo("Browser Used", "Firefox");
 	
 	extent.setSystemInfo("Executed by", "Automation batch");
 	
